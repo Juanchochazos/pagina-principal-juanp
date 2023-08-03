@@ -1,0 +1,274 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+    background-color:rgb(254, 243, 230);
+
+}
+.container{
+background-image: url(./w0263_1s_Nautical-Waves-Wallpaper-for-Walls-Waves-of-Chic_Repeating-Pattern-Sample-1.webp);
+background-size: cover;
+width: 100vw;
+height: 70vh;
+display: flex;
+font-family: monospace;
+border-bottom: 0.1rem black solid;
+align-items: center;
+}
+.container .logo{
+    display: flex;
+    align-items: center;
+}
+.container .logo a{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+}
+.container .img{
+    width: 70%;
+    height: 50%;
+    border-radius: 90%;
+    
+}
+.container .descrip{
+    color: darkslategray;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-shadow:white 0.1em 0.1em 0.2em;    
+    font-size: 4rem;
+    height: 50%;
+}
+.navegacion{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
+    margin-bottom: 1rem;
+
+}
+.navegacion .botones{
+list-style: none;
+text-align: center;
+}
+.botones li{
+display: inline-block;
+}
+.botones li a{
+    color:darkslategray;
+    text-shadow:white  1.1em 0.1em 0.2em;    
+    font-size: 3rem;
+    justify-content: space-evenly;
+    text-decoration: none;
+}
+li a:hover{
+    color:darksalmon;
+}
+
+li a::after{
+    content: " | ";
+    padding: 0;
+    margin: 0;
+
+}
+
+
+h1,h2,h3,h4 {
+    font-weight: normal;
+}
+
+ h1{
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 7rem;
+}
+
+.contenedor-inicio{
+    display: flex;
+    justify-content: center;
+}
+.inicio h3{
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.contenedor-inicio .inicio{
+    display: block;
+    width: 40%;
+}
+
+.inicio img {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    
+
+}
+.inicio p{
+    width: 100%;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    text-align: start;
+}
+.contenedor-fotos{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4rem;;
+}
+.contenedor-fotos .fotos{
+    display: block;
+ 
+    width: 20%;
+}
+.fotos img{
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+.fotos h3{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.fotos p{
+    width: 100%;
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+.container-formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container-formulario h1{
+   text-align: center;
+   margin-bottom: 2rem;
+
+}
+
+.container-formulario .formulario{
+    width: 60rem;
+    padding: 3px; ;
+    display: flex;
+    background-color: antiquewhite;    
+    flex-direction: column;
+    border: black 0.15rem solid;
+    border-radius: 5px;
+    box-shadow: 7px 13px 37px black;
+    
+}
+.container-formulario label{
+
+    padding: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+
+}
+.formulario span{
+    width: 100%;
+    font-size: 3rem;
+    display: flex;
+
+}
+.formulario input{
+    display: flex;
+    width: 70%;
+    height: 4rem;
+    text-align: start;
+}
+.formulario .input {
+   padding: 2rem;
+}
+.formulario input::placeholder{
+    padding: 1rem;
+}
+.formulario .boton{
+    display: flex;
+    justify-content: baseline;
+    margin: 20px auto ;
+}
+.boton {
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.boton:hover{
+    color: white;
+}
+.p-form{
+    font-size: 3rem;
+    text-align: center;
+}
+
+.pie-pagina{
+    border-top: 1px black solid;
+    margin-top: 7rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+.pie-pagina a{
+    
+    display: flex;
+    flex-direction: column;    
+    margin-top: 1rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+}
+.pie-pagina a:hover{
+    color: white;
+}
+.pie-pagina .logo{
+  display: flex;
+  margin: auto;
+  
+}
+@media(max-width:600px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        background-size: cover;   
+
+
+    }
+    .container .img {
+        background-size: cover;   
+        width: 20%;
+        display: flex;
+        margin: auto;
+        margin-bottom: 2rem;
+        flex-direction: column;
+    }
+
+    .container .descrip{  
+        font-size: 1.5rem;
+    }
+    .container-formulario .formulario{
+        width: auto;
+    }
+
+    .pie-pagina{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .pie-pagina a{
+        margin-bottom: 1.1rem;
+        font-size: 2.4rem;
+        text-shadow: 1px 1px 23px black;
+        display: flex;
+        margin: 20px auto ;
+    
+        
+    }
+}
